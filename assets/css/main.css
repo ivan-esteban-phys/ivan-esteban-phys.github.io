@@ -1137,18 +1137,21 @@ button {
 }
 
 #bg:before {
-    -moz-transition: background-color 2.5s ease-in-out;
-    -webkit-transition: background-color 2.5s ease-in-out;
-    -ms-transition: background-color 2.5s ease-in-out;
-    transition: background-color 2.5s ease-in-out;
-    -moz-transition-delay: 0.75s;
-    -webkit-transition-delay: 0.75s;
-    -ms-transition-delay: 0.75s;
-    transition-delay: 0.75s;
+    -moz-transition: background-color 1.5s ease-in-out;
+    -webkit-transition: background-color 1.5s ease-in-out;
+    -ms-transition: background-color 1.5s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(19, 21, 25, 0.95)), url("../../images/overlay.png");
-    background-size: auto, 256px 256px;
-    background-position: center, center;
-    background-repeat: no-repeat, repeat;
+    background-size: auto,
+ 256px 256px;
+    background-position: center,
+ center;
+    background-repeat: no-repeat,
+ repeat;
     z-index: 2;
 }
 
@@ -1210,7 +1213,7 @@ body.is-preload #bg:before {
 }
 
 #wrapper:before {
-    content: '';
+    content: url(images/Me.jpg);
     display: block;
 }
 
@@ -1314,19 +1317,19 @@ body.is-preload #bg:before {
 }
 
 #header .content .inner {
-    -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-    -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-    -ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-    transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+    -moz-transition: max-height 0.85s ease, padding 0.95s ease, opacity 0.325s ease-in-out;
+    -ms-transition: max-height 0.85s ease, padding 0.95s ease, opacity 0.325s ease-in-out;
+    -webkit-transition: max-height 0.85s ease, padding 0.95s ease, opacity 0.325s ease-in-out;    
+    /* transition: max-height 0.85s ease, padding 0.95s ease, opacity 0.325s ease-in-out; MODIFIED */
+    transition: padding 0.95s ease, opacity 0.325s ease-in-out;
     -moz-transition-delay: 0.25s;
-    -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
-    transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;    
+    transition-delay: 0.25s; 
     padding: 3rem 2rem;
     max-height: 40rem;
     overflow: hidden;
 }
-
 
 #header .content .inner > :last-child {
     margin-bottom: 0;
